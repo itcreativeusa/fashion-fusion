@@ -95,7 +95,7 @@ Your sensitive API key information is protected on the server, ensuring the secu
 ## Screenshots
 
 Screenshot located in `./img/` folder
-![About me page screenshot](./img/screenshot.png)
+![TODO add text here](./img/screenshot.png)
 
 ## Credits
 
