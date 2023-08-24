@@ -6,7 +6,7 @@ Deployed application link on GitHub
 https://github.com/itcreativeusa/fashion-fusion
 
 Deployed application link on Heroku
-/fashion-fusion
+https://fashion-fusion-fdbc9c87836b.herokuapp.com/
 
 Fashion-Fusione is an eCommerce platform specializing in clothing, where garments are organized by colors. This allows users to select from a list of colors, which then displays related clothing items in those chosen colors. Users can add or remove selected items to/from their shopping cart. When ready, they can proceed to checkout using the Stripe payment gateway.
 
