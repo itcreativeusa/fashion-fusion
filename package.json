@@ -10,10 +10,14 @@
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "keywords": [],
   "author": "The Drip Daddies",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "concurrently": "^5.1.0"
   },
   "dependencies": {
