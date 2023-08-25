@@ -29,7 +29,7 @@ db.once('open', async () => {
       name: 'Suspender Belt',
       description:
         'Add a pop of color and vintage flair to your outfit with these vibrant red suspenders. Whether you are dressing up or adding a quirky touch to your everyday look, these adjustable suspenders provide both style and functionality.',
-      image: 'redAccs1.png',
+      image: 'red/redAccs1.png',
       category: categories[0]._id,
       price: 12.99,
       quantity: 500
