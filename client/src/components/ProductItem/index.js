@@ -10,8 +10,8 @@ function ProductItem(item) {
 
   const {
     name,
-    description,
     image,
+    description,
     category,
     price,
     quantity,
