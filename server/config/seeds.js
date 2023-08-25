@@ -11,6 +11,7 @@ db.once('open', async () => {
     { name: 'Green' },
     { name: 'Blue' },
     { name: 'Purple' },
+    { name: 'Pink'},
     { name: 'White' },
     { name: 'Black' }
   ]);
@@ -561,6 +562,141 @@ db.once('open', async () => {
       description:
         'Make a statement with our green heels, a chic and vibrant choice that adds a touch of sophistication to any outfit. Designed to combine elegance and comfort, these heels are perfect for stepping out with confidence at formal events and special occasions.',
       image: 'green/greenShoe3.png',
+      price: 29.99,
+      quantity: 20
+    },
+
+    //Blue//
+    {
+      name: 'Hat',
+      description:
+        'Channel your inner adventurer with our blue cowboy hat, a bold accessory that adds a Western flair to your style. Whether you are hitting the festival scene or looking for a unique statement piece, this hat is a versatile addition that is sure to turn heads.',
+      image: 'blue/blueAccs1.png',
+      category: categories[4]._id,
+      price: 14.99,
+      quantity: 500
+    },
+    {
+      name: 'Sunglasses',
+      description:
+        'Elevate your eyewear game with our blue sunglasses featuring chains, a fusion of bold fashion and practicality that adds an edgy touch to your look. These sunglasses not only shield your eyes from the sun but also make a fashion statement with their unique chain detailing.',
+      image: 'blue/blueAccs2.png',
+      category: categories[4]._id,
+      price: 17.99,
+      quantity: 500
+    },
+    {
+      name: 'Socks',
+      category: categories[4]._id,
+      description:
+        'Add a splash of color to your sock drawer with our blue socks, a playful yet functional accessory that adds a pop of vibrancy to your outfit. Crafted for comfort and style, these socks are perfect for showcasing your personality even in the smallest details.',
+      image: 'blue/blueAccs3.png',
+      price: 9.99,
+      quantity: 20
+    },
+    {
+      name: 'Jacket',
+      category: categories[4]._id,
+      description:
+        'Elevate your street style with our blue bomber jacket, a versatile piece that seamlessly combines urban edge with a touch of sophistication. Crafted for both comfort and fashion-forward flair, this jacket is perfect for completing your everyday look.',
+      image: 'blue/blueJacket1.png',
+      price: 35.99,
+      quantity: 30
+    },
+    {
+      name: 'Hoodie',
+      category: categories[4]._id,
+      description:
+        'Update your casual wardrobe with our blue basic hoodie, a timeless and comfortable essential that effortlessly blends style and comfort. Whether youre lounging at home or heading out for a relaxed outing, this hoodie is the perfect choice for adding a pop of color to your outfit.',
+      image: 'blue/blueJacket2.png',
+      price: 24.99,
+      quantity: 100
+    },
+    {
+      name: 'Cropped Hoodie',
+      category: categories[4]._id,
+      description: 'Embrace a trendy silhouette with our blue cropped hoodie, a playful and stylish addition that is perfect for layering or making a statement on its own. With its vibrant color and contemporary design, this hoodie adds a touch of casual chic to your outfit rotation.',
+      image: 'blue/blueJacket3.png',
+      price: 24.99,
+      quantity: 80
+    },
+    {
+      name: 'Joggers',
+      category: categories[4]._id,
+      description:
+        'Stay comfortable and stylish with our blue sweatpants, a versatile choice that effortlessly bridges leisure and fashion. Crafted with a relaxed fit and vibrant blue hue, these sweatpants are perfect for both lounging around and running errands in style.',
+      image: 'blue/bluePants1.png',
+      price: 25.99,
+      quantity: 30
+    },
+    {
+      name: 'Slacks',
+      category: categories[4]._id,
+      description:
+        'Elevate your professional attire with our blue slacks, a refined addition that combines a classic silhouette with a modern color twist. Whether for the office or a formal event, these slacks provide a polished look while adding a fresh pop of color to your ensemble.',
+      image: 'blue/bluePants2.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[4]._id,
+      description: 'Add an adventurous touch to your outfit with our blue pants, a trendy and functional choice that blends style and utility effortlessly. With their vibrant color and versatile design, these pants are perfect for showcasing your unique fashion sense in any casual setting.',
+      image: 'blue/bluePants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Polo Shirt',
+      category: categories[4]._id,
+      description:
+        'Elevate your casual attire with our blue polo shirt, a versatile staple that exudes both comfort and sophistication. Crafted for a timeless fit and finished in a rich blue hue, this shirt effortlessly transitions from leisure to semi-formal occasions.',
+      image: 'blue/blueShirt1.png',
+      price: 27.99,
+      quantity: 1000
+    },
+    {
+      name: 'Long Sleeve Shirt',
+      category: categories[4]._id,
+      description:
+        'Embrace cozy elegance with our blue long-sleeve shirt, a wardrobe essential that seamlessly combines comfort and style. Whether layered under a blazer or worn on its own, this shirt is perfect for showcasing your fashion sense with a touch of relaxed refinement.',
+      image: 'blue/blueShirt2.png',
+      price: 25.99,
+      quantity: 100
+    },
+    {
+      name: 'Blouse',
+      category: categories[4]._id,
+      description:
+        'Update your wardrobe with our blue blouse, a chic and versatile choice that adds a touch of effortless elegance to your look. Designed with attention to detail and a flattering silhouette, this blouse is perfect for enhancing your style whether paired with jeans or a skirt.',
+      image: 'blue/blueShirt3.png',
+      price: 27.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Step up your footwear game with our blue sneakers, a perfect blend of comfort and style for any occasion. Whether youre hitting the streets or looking to make a fashion statement, these sneakers are the perfect choice to add a pop of color to your look.',
+      image: 'blue/blueShoe1.png',
+      category: categories[4]._id,
+      price: 24.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Embrace comfort without compromising style with our blue flats, a versatile choice that effortlessly adds a touch of elegance to your ensemble. Crafted with attention to detail and a vibrant blue shade, these flats are perfect for both casual outings and more formal events.',
+      image: 'blue/blueShoe2.png',
+      category: categories[4]._id,
+      price: 25.99,
+      quantity: 500
+    },
+    {
+      name: 'Heels',
+      category: categories[4]._id,
+      description:
+        'Make a statement with our blue heels, a sophisticated choice that adds a pop of color and allure to any outfit. Designed for both comfort and style, these heels are a must-have for stepping out with confidence at special occasions and gatherings.',
+      image: 'blue/blueShoe3.png',
       price: 29.99,
       quantity: 20
     },
