@@ -1,0 +1,25 @@
+.navbar {
+    padding-top: 5px;
+    padding-right: 65px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.header {
+    background-color: lightgoldenrodyellow;
+}
+
+.title {
+    padding-top: 5px;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    display: inline-block;
+    font-size: 40px;
+}
