@@ -39,7 +39,7 @@ function Nav() {
           <span role="img" aria-label="shopping bag">
             👗
           </span>
-          Fashion-Fusion
+          Fashion Fusion
         </Link>
       </h1>
 
