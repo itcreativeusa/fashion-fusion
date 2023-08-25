@@ -9,11 +9,13 @@ function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
   const {
-    image,
     name,
-    _id,
+    description,
+    image,
+    category,
     price,
-    quantity
+    quantity,
+    _id,
   } = item;
 
   const { cart } = state
