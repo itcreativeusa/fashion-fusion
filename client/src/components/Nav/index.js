@@ -33,8 +33,8 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
+    <header className="flex-row px-1 navbar">
+      <h1 className="Title">
         <Link to="/">
           <span role="img" aria-label="shopping bag">
             👗
