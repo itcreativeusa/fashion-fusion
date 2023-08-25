@@ -11,8 +11,8 @@ db.once('open', async () => {
     { name: 'Green' },
     { name: 'Blue' },
     { name: 'Purple' },
-    { name: 'White'},
-    { name: 'Black'}
+    { name: 'White' },
+    { name: 'Black' }
   ]);
 
   // const article = Article.insertMany([
@@ -29,7 +29,7 @@ db.once('open', async () => {
       name: 'Suspender Belt',
       description:
         'Add a pop of color and vintage flair to your outfit with these vibrant red suspenders. Whether you are dressing up or adding a quirky touch to your everyday look, these adjustable suspenders provide both style and functionality.',
-      image: 'redAccs1.png',
+      image: 'red/redAccs1.png',
       category: categories[0]._id,
       price: 12.99,
       quantity: 500
@@ -239,7 +239,139 @@ db.once('open', async () => {
       price: 29.99,
       quantity: 600
     },
-        {
+    {
+      name: 'Shirt',
+      category: categories[2]._id,
+      description:
+        'Upgrade your essentials with our classic orange shirt, a versatile wardrobe staple that effortlessly complements any style. With its timeless design and comfortable fit, this shirt is the perfect canvas for creating countless fashionable looks.',
+      image: 'orangeShirt1.png',
+      price: 7.99,
+      quantity: 1000
+    },
+    {
+      name: 'Crop Top',
+      category: categories[2]._id,
+      description:
+        'Elevate your casual wardrobe with our essential orange crop top, a versatile piece that adds a pop of color and modern flair to your outfits. Designed for comfort and style, this crop top is perfect for embracing the latest trends with confidence.',
+      image: 'orangeShirt2.png',
+      price: 9.99,
+      quantity: 100
+    },
+    {
+      name: 'Button-Up Shirt',
+      category: categories[2]._id,
+      description:
+        'Revitalize your everyday style with our basic orange button-up shirt, a versatile wardrobe essential that seamlessly transitions from casual to smart. Crafted for comfort and timeless appeal, this shirt effortlessly adds a pop of color and sophistication to any ensemble.',
+      image: 'orangeShirt3.png',
+      price: 19.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      category: categories[1]._id,
+      description:
+        'Step up your footwear game with our vibrant yellow sneakers, a perfect blend of style and comfort for any occasion. Whether youre hitting the streets or looking to make a fashion statement, these sneakers are the perfect choice to add a pop of color to your look.',
+      image: 'yellowShoe1.png',
+      price: 29.99,
+      quantity: 1000
+    },
+    {
+      name: 'Slip On Sneakers',
+      category: categories[1]._id,
+      description:
+        'Effortlessly combine comfort and style with our yellow slip-on sneakers, the perfect addition to your casual footwear collection. With their vibrant color and convenient design, these sneakers are an ideal choice for on-the-go fashion and comfort.',
+      image: 'yellowShoe2.png',
+      price: 15.99,
+      quantity: 100
+    },
+    {
+      name: 'Heels',
+      category: categories[1]._id,
+      description:
+        'Elevate your elegance with our yellow heels, a striking choice that adds a pop of color and sophistication to any outfit. Designed for both comfort and style, these heels are a must-have for making a statement at any occasion.',
+      image: 'yellowShoe3.png',
+      price: 29.99,
+      quantity: 600
+    },
+    {
+      name: 'Sunglasses',
+      description:
+        'Add a touch of warmth to your style with our orange sunglasses, a chic accessory that perfectly complements sunny days and fashionable looks. These sunglasses provide both UV protection and a pop of color, making them an essential addition to your eyewear collection.',
+      image: 'orangeAccs1.png',
+      category: categories[2]._id,
+      price: 12.99,
+      quantity: 500
+    },
+    {
+      name: 'Chiffon Scarf',
+      description:
+        'Enhance your ensemble with our vibrant orange chiffon scarf, a lightweight and elegant accessory that adds a burst of color and flair to any outfit. Crafted from delicate chiffon, this scarf drapes gracefully and lends a touch of sophistication to your look.',
+      image: 'orangeAccs2.png',
+      category: categories[2]._id,
+      price: 17.99,
+      quantity: 500
+    },
+    {
+      name: 'Gloves',
+      category: categories[2]._id,
+      description:
+        'Elevate your formal attire with our luxurious orange satin gloves, a timeless accessory that exudes elegance and style. Crafted with a smooth finish and comfortable fit, these gloves add a touch of sophistication to any special occasion.',
+      image: 'orangeAccs3.png',
+      price: 17.99,
+      quantity: 20
+    }, {
+      name: 'Puffer Jacket',
+      category: categories[2]._id,
+      description:
+        'Stay cozy and stylish with our orange puffer jacket, a must-have outerwear piece that combines warmth and fashion effortlessly. Whether youre braving the cold or making a statement, this jackets vibrant color and practical design ensure youre ready for any adventure.',
+      image: 'orangeJacket1.png',
+      price: 39.99,
+      quantity: 30
+    },
+    {
+      name: 'Cropped Jacket',
+      category: categories[2]._id,
+      description:
+        'Elevate your style with our orange cropped jacket, a versatile piece that adds a bold and modern touch to your wardrobe. With its vibrant color and flattering silhouette, this jacket is perfect for effortlessly layering over your favorite outfits.',
+      image: 'orangeJacket2.png',
+      price: 29.99,
+      quantity: 100
+    },
+    {
+      name: 'Jacket',
+      category: categories[2]._id,
+      description: 'Refine your look with our orange blazer, a sophisticated statement piece that seamlessly fuses bold color and professional elegance. From boardroom meetings to stylish outings, this blazer effortlessly enhances your ensemble with a touch of vibrant flair.',
+      image: 'orangeJacket3.png',
+      price: 35.99,
+      quantity: 80
+    },
+    {
+      name: 'Trousers',
+      category: categories[2]._id,
+      description:
+        'Elevate your workwear with our orange work trousers, a vibrant addition that adds a contemporary twist to your professional attire. Designed for both style and comfort, these trousers are the perfect choice to showcase your confidence and fashion-forward approach in the workplace.',
+      image: 'orangePants1.png',
+      price: 35.99,
+      quantity: 30
+    },
+    {
+      name: 'Cargo Pants',
+      category: categories[2]._id,
+      description:
+        'Discover the perfect blend of style and functionality with our orange cargo pants, designed to elevate your casual wardrobe with a pop of color. These pants combine a trendy silhouette with ample pocket space, making them an essential choice for both fashion and practicality.',
+      image: 'orangePants2.png',
+      price: 39.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[2]._id,
+      description: 'Add a burst of color to your wardrobe with our orange pants, a versatile and stylish choice for any occasion. Crafted for both comfort and flair, these pants effortlessly elevate your look and showcase your individuality.',
+      image: 'orangePants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
       name: 'Long Sleeve Crop Top',
       category: categories[1]._id,
       description:
@@ -265,7 +397,35 @@ db.once('open', async () => {
       image: 'yellowShirt3.png',
       price: 9.99,
       quantity: 600
-    }
+    },
+    {
+      name: 'Heels',
+      description:
+        'Step into the spotlight with our vibrant orange heels, a bold and stylish choice that adds a touch of elegance to your look. Designed for both comfort and fashion-forward flair, these heels are the perfect complement to any special occasion.',
+      image: 'orangeShoe1.png',
+      category: categories[2]._id,
+      price: 24.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Elevate your street style with our orange sneakers, a fusion of comfort and trendiness that effortlessly brightens up your outfit. Whether youre running errands or meeting friends, these sneakers provide a pop of color and a modern edge to your everyday adventures.',
+      image: 'orangeShoe2.png',
+      category: categories[2]._id,
+      price: 29.99,
+      quantity: 500
+    },
+    {
+      name: 'Slip-On Slides',
+      category: categories[2]._id,
+      description:
+        ' Indulge in comfort without sacrificing style with our orange slippers, a cozy choice that adds a playful touch to your relaxation routine. Crafted with a plush interior and eye-catching color, these slippers are perfect for lounging at home or adding a pop of fun to your downtime.',
+      image: 'orangeShoe3.png',
+      price: 19.99,
+      quantity: 20
+    },
+
   ]);
 
   console.log('products seeded');
