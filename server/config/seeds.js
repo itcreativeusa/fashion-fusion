@@ -776,7 +776,550 @@ db.once("open", async () => {
       image: 'blue/blueShoe3.png',
       price: 29.99,
       quantity: 20
+    },
 
+    //Purple//
+    {
+      name: 'Butterfly Clips',
+      description:
+        'Elevate your hair game with our purple butterfly hair clips, a whimsical accessory that adds a touch of charm and playfulness to your hairstyle. Crafted with attention to detail and vibrant purple hues, these clips are perfect for both everyday wear and special occasions.',
+      image: 'purple/purpleAccs1.png',
+      category: categories[5]._id,
+      price: 14.99,
+      quantity: 500
+    },
+    {
+      name: 'Sunglasses',
+      description:
+        'Add a burst of color to your eyewear collection with our purple sunglasses, a stylish and functional accessory that adds flair to your sunny days. Designed for both UV protection and fashion-forward style, these sunglasses are perfect for standing out while shielding your eyes from the sun.',
+      image: 'purple/purpleAccs2.png',
+      category: categories[5]._id,
+      price: 17.99,
+      quantity: 500
+    },
+    {
+      name: 'Headband',
+      category: categories[5]._id,
+      description:
+        'Accentuate your look with our purple headband, a versatile accessory that effortlessly adds a pop of color and elegance to your ensemble. Whether you are styling your hair for a casual day out or a special event, this headband offers comfort and style in one chic package.',
+      image: 'purple/purpleAccs3.png',
+      price: 9.99,
+      quantity: 20
+    },
+    {
+      name: 'Zip-Up Jacket',
+      category: categories[5]._id,
+      description:
+        'Stay cozy and stylish with our purple hoodie, a must-have addition to your casual wardrobe that effortlessly blends comfort and fashion. Crafted with a relaxed fit and vibrant purple hue, this hoodie is perfect for embracing a laid-back yet trendy look.',
+      image: 'purple/purpleJacket1.png',
+      price: 25.99,
+      quantity: 30
+    },
+    {
+      name: 'Blazer',
+      category: categories[5]._id,
+      description:
+        'Elevate your formal attire with our purple blazer, a chic and sophisticated choice that adds a pop of color and elegance to any ensemble. Designed for both style and confidence, this blazer effortlessly transitions from office meetings to evening gatherings.',
+      image: 'purple/purpleJacket2.png',
+      price: 34.99,
+      quantity: 100
+    },
+    {
+      name: 'Jacket',
+      category: categories[5]._id,
+      description:
+        'Embrace warmth and style with our purple fleece jacket, a versatile outerwear piece that combines cozy comfort with a vibrant pop of color. Whether youre tackling outdoor adventures or simply need an extra layer of warmth, this jacket is the perfect companion for chilly days.',
+      image: 'purple/purpleJacket3.png',
+      price: 29.99,
+      quantity: 80
+    },
+    {
+      name: 'Pants',
+      category: categories[5]._id,
+      description:
+        'Elevate your wardrobe with our purple pants, a versatile and stylish choice that effortlessly adds a pop of color to your look. Designed for both comfort and fashion, these pants are perfect for expressing your individuality with confidence.',
+      image: 'purple/purplePants1.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[5]._id,
+      description:
+        'Update your denim collection with our purple jeans, a contemporary twist on a classic favorite that adds a vibrant touch to your casual style. Crafted with attention to detail and a flattering fit, these jeans are a statement piece for those who love to stand out.',
+      image: 'purple/purplePants2.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[5]._id,
+      description: 'Add a touch of pattern to your ensemble with our purple checkered pants, a trendy and unique choice that blends style and personality effortlessly. With their eye-catching design and rich purple hues, these pants are perfect for creating a fashion-forward look thats all your own.',
+      image: 'purple/purplePants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Long-Sleeve Collared Shirt',
+      category: categories[5]._id,
+      description:
+        'Elevate your formal and casual looks with our purple long sleeve button-down shirt, a versatile piece that combines timeless style with a pop of color. Crafted for comfort and a polished appearance, this shirt is perfect for adding a touch of sophistication to any occasion.',
+      image: 'purple/purpleShirt1.png',
+      price: 27.99,
+      quantity: 1000
+    },
+    {
+      name: 'Shirt',
+      category: categories[5]._id,
+      description:
+        'Add a touch of vibrancy to your wardrobe with our purple shirt, a classic and versatile choice that effortlessly complements your style. Whether paired with jeans for a casual outing or dressed up for a night out, this shirt is a must-have for expressing your individuality.',
+      image: 'purple/purpleShirt2.png',
+      price: 15.99,
+      quantity: 100
+    },
+    {
+      name: 'Shirt',
+      category: categories[5]._id,
+      description:
+        'Elevate your everyday style with our purple shirt, a comfortable and fashionable choice that effortlessly blends versatility and flair. Crafted with a modern fit and attention to detail, this shirt is perfect for expressing your unique personality while staying on-trend.',
+      image: 'purple/purpleShirt3.png',
+      price: 15.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Step up your footwear game with our purple sneakers, a perfect blend of comfort and style for any occasion. Whether youre hitting the streets or looking to make a fashion statement, these sneakers are the perfect choice to add a pop of color to your look.',
+      image: 'purple/purpleShoe1.png',
+      category: categories[5]._id,
+      price: 44.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Elevate your athletic performance with our purple track shoes, a combination of speed, comfort, and vibrant style. Designed for both training sessions and competition, these track shoes provide the support you need while making a bold statement on the track.',
+      image: 'purple/purpleShoe2.png',
+      category: categories[5]._id,
+      price: 45.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      category: categories[5]._id,
+      description:
+        'Make a bold fashion statement with our purple sneakers, a versatile choice that effortlessly adds a pop of color and personality to your outfit. Crafted with attention to detail and a comfortable fit, these sneakers are perfect for expressing your individuality while staying comfortable all day long.',
+      image: 'purple/purpleShoe3.png',
+      price: 49.99,
+      quantity: 20
+    },
+
+    //Pink//
+    {
+      name: 'Sunglasses',
+      description:
+        'Spread love and style with our pink heart-shape sunglasses, a playful accessory that adds a cheerful twist to your look. These sunglasses not only protect your eyes but also radiate positivity and charm, making them an ideal choice for sunny days.',
+      image: 'pink/pinkAccs1.png',
+      category: categories[6]._id,
+      price: 14.99,
+      quantity: 500
+    },
+    {
+      name: 'Cowboy Hat',
+      description:
+        'Channel your inner adventurer with our pink cowboy hat, a charming accessory that adds a touch of whimsy and flair to your outfit. Crafted with attention to detail and a vibrant pink hue, this hat is perfect for embracing a Western-inspired look or adding a playful element to any ensemble.',
+      image: 'pink/pinkAccs2.png',
+      category: categories[6]._id,
+      price: 19.99,
+      quantity: 500
+    },
+    {
+      name: 'Watch',
+      category: categories[6]._id,
+      description:
+        'Elevate your wrist game with our pink watch, a chic and functional accessory that adds a touch of elegance to your everyday style. Whether youre dressing up or down, this watch seamlessly blends fashion and practicality for a timeless addition to your accessories collection.',
+      image: 'pink/pinkAccs3.png',
+      price: 39.99,
+      quantity: 20
+    },
+    {
+      name: 'Jacket',
+      category: categories[6]._id,
+      description:
+        'Add a splash of color to your outerwear collection with our pink denim jacket, a stylish piece that effortlessly combines classic design with a vibrant twist. Crafted for both fashion and comfort, this jacket is perfect for making a statement in any season.',
+      image: 'pink/pinkJacket1.png',
+      price: 35.99,
+      quantity: 30
+    },
+    {
+      name: 'Jacket',
+      category: categories[6]._id,
+      description:
+        'Elevate your casual look with our pink denim jacket, a versatile and on-trend addition that adds a pop of color to your ensemble. Whether layered over a dress or paired with jeans, this jacket is a must-have for showcasing your individual style with ease.',
+      image: 'pink/pinkJacket2.png',
+      price: 37.99,
+      quantity: 100
+    },
+    {
+      name: 'Zip-Up Jacket',
+      category: categories[6]._id,
+      description:
+        'Stay cozy and fashionable with our pink zippered hoodie, a comfortable essential that seamlessly blends warmth and style. Whether youre lounging at home or stepping out for a relaxed outing, this hoodie offers both comfort and a vibrant touch to your outfit.',
+      image: 'pink/pinkJacket3.png',
+      price: 29.99,
+      quantity: 80
+    },
+    {
+      name: 'Pants',
+      category: categories[6]._id,
+      description:
+        'Embrace a touch of whimsy with our pink pants adorned with hearts, a playful and fashionable choice that adds charm to your everyday style. Crafted with attention to detail and a comfortable fit, these pants are perfect for expressing your individuality with flair.',
+      image: 'pink/pinkPants1.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[6]._id,
+      description:
+        'Elevate your athleisure game with our pink joggers, a perfect blend of comfort and trendiness for your casual looks. With their relaxed fit and a splash of color, these joggers are the ideal choice for both lounging and stepping out in style.',
+      image: 'pink/pinkPants2.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[6]._id,
+      description: 'Stay cozy and stylish with our pink sweatpants, a wardrobe essential that effortlessly combines comfort and flair. Crafted with a relaxed fit and vibrant pink hue, these sweatpants are perfect for embracing a relaxed yet fashionable look.',
+      image: 'pink/pinkPants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Long-Sleeve Shirt',
+      category: categories[6]._id,
+      description:
+        'Embrace versatility and comfort with our pink long sleeve top, a must-have addition to your casual wardrobe that seamlessly transitions from day to night. Crafted with a flattering fit and a soft touch, this top is perfect for adding a pop of color to your everyday ensembles.',
+      image: 'pink/pinkShirt1.png',
+      price: 22.99,
+      quantity: 1000
+    },
+    {
+      name: 'Blouse',
+      category: categories[6]._id,
+      description:
+        'Elevate your ensemble with our pink blouse, a chic and sophisticated choice that effortlessly blends style and elegance. Whether paired with skirts for a formal occasion or jeans for a more relaxed look, this blouse adds a touch of femininity and charm to your outfit.',
+      image: 'pink/pinkShirt2.png',
+      price: 25.99,
+      quantity: 100
+    },
+    {
+      name: 'Shirt',
+      category: categories[6]._id,
+      description:
+        'Add a burst of color to your wardrobe with our pink shirt, a classic and versatile piece that exudes both style and comfort. With its modern fit and attention to detail, this shirt is perfect for expressing your personality while staying on-trend.',
+      image: 'pink/pinkShirt3.png',
+      price: 15.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Step into style with our pink sneakers, a perfect blend of comfort and trendiness for any occasion. Whether youre hitting the streets or looking to make a fashion statement, these sneakers are the ideal choice to add a pop of color to your look.',
+      image: 'pink/pinkShoe1.png',
+      category: categories[6]._id,
+      price: 44.99,
+      quantity: 500
+    },
+    {
+      name: 'Heels',
+      description:
+        'Elevate your elegance with our pink heels, a sophisticated choice that adds a touch of glamour and femininity to any outfit. Designed for both comfort and style, these heels are a must-have for making a statement at formal events and special occasions.',
+      image: 'pink/pinkShoe2.png',
+      category: categories[6]._id,
+      price: 45.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      category: categories[6]._id,
+      description:
+        'Make a bold fashion statement with our pink sneakers, a versatile choice that effortlessly adds a vibrant touch to your ensemble. Crafted with attention to detail and a comfortable fit, these sneakers are perfect for expressing your individuality while staying comfortable all day long.',
+      image: 'pink/pinkShoe3.png',
+      price: 49.99,
+      quantity: 20
+    },
+
+    //White//
+    {
+      name: 'Beanie',
+      description:
+        'Stay cozy and stylish with our white beanie, a versatile accessory that adds warmth and a touch of urban flair to your look. Crafted with attention to detail and a comfortable fit, this beanie is perfect for braving chilly days with a dose of fashion.',
+      image: 'white/whiteAccs1.png',
+      category: categories[7]._id,
+      price: 12.99,
+      quantity: 500
+    },
+    {
+      name: 'Sunglasses',
+      description:
+        'Elevate your eyewear game with our white sunglasses, a chic and timeless accessory that adds a touch of sophistication to your sunny days. Designed for both UV protection and style, these sunglasses effortlessly complement your ensemble while shielding your eyes from the sun.',
+      image: 'white/whiteAccs2.png',
+      category: categories[7]._id,
+      price: 19.99,
+      quantity: 500
+    },
+    {
+      name: 'Hair Clips',
+      category: categories[7]._id,
+      description:
+        'Accentuate your hair with our white hair clips, a delicate and stylish choice that adds a touch of elegance to your hairstyle. Whether youre styling your locks for a special event or adding a subtle charm to your everyday look, these hair clips are the perfect finishing touch.',
+      image: 'white/whiteAccs3.png',
+      price: 16.99,
+      quantity: 20
+    },
+    {
+      name: 'Hoodie',
+      category: categories[7]._id,
+      description:
+        'Stay cozy and effortlessly stylish with our white hoodie, a classic essential that combines comfort and versatility in one. Crafted with a relaxed fit and timeless design, this hoodie is perfect for layering or wearing on its own for a casual and chic look.',
+      image: 'white/whiteJacket1.png',
+      price: 25.99,
+      quantity: 30
+    },
+    {
+      name: 'Jacket',
+      category: categories[7]._id,
+      description:
+        'Elevate your outerwear game with our white bomber jacket, a contemporary staple that blends urban edge with a touch of sophistication. Whether paired with jeans or a dress, this jacket is perfect for making a fashion-forward statement while keeping you warm and stylish.',
+      image: 'white/whiteJacket2.png',
+      price: 37.99,
+      quantity: 100
+    },
+    {
+      name: 'Jacket',
+      category: categories[7]._id,
+      description:
+        'Add a versatile piece to your wardrobe with our white jacket, a must-have addition that effortlessly complements a variety of looks. Designed for both comfort and style, this jacket is perfect for layering over any ensemble for a polished finish.',
+      image: 'white/whiteJacket3.png',
+      price: 29.99,
+      quantity: 80
+    },
+    {
+      name: 'Pants',
+      category: categories[7]._id,
+      description:
+        'Elevate your outfit with our white pants, a versatile and stylish choice that effortlessly adds a touch of sophistication to any ensemble. Crafted for both comfort and fashion, these pants are perfect for expressing your individuality with confidence.',
+      image: 'white/whitePants1.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Cargo Pants',
+      category: categories[7]._id,
+      description:
+        'Discover the perfect blend of style and functionality with our white cargo pants, designed to enhance your casual wardrobe with a touch of utility and flair. These pants combine a trendy silhouette with ample pocket space, making them an essential choice for both fashion and practicality.',
+      image: 'white/whitePants2.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Joggers',
+      category: categories[7]._id,
+      description: 'Stay comfortably stylish with our white joggers, a perfect fusion of comfort and trendiness for your everyday looks. With their relaxed fit and clean white hue, these joggers are ideal for embracing a laid-back yet fashionable aesthetic.',
+      image: 'white/whitePants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Shirt',
+      category: categories[7]._id,
+      description:
+        'Add a touch of timeless elegance to your wardrobe with our white shirt, a versatile essential that effortlessly complements any style. Crafted with attention to detail and a comfortable fit, this shirt is perfect for creating countless fashionable looks.',
+      image: 'white/whiteShirt1.png',
+      price: 19.99,
+      quantity: 1000
+    },
+    {
+      name: 'Shirt',
+      category: categories[7]._id,
+      description:
+        'Elevate your ensemble with our white shirt, a classic and versatile choice that exudes both style and comfort. Whether paired with jeans for a casual outing or dressed up for a formal event, this shirt is a must-have for expressing your individuality.',
+      image: 'white/whiteShirt2.png',
+      price: 19.99,
+      quantity: 100
+    },
+    {
+      name: 'Shirt',
+      category: categories[7]._id,
+      description:
+        'Enhance your wardrobe with our white v-neck shirt, a chic and flattering option that seamlessly transitions from day to night. Crafted with a modern fit and attention to detail, this shirt is perfect for showcasing your personality while staying on-trend.',
+      image: 'white/whiteShirt3.png',
+      price: 19.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Step into style with our white sneakers, a perfect blend of comfort and trendiness for any occasion. Whether youre strolling the city streets or heading out with friends, these sneakers offer a versatile and timeless choice to complete your look.',
+      image: 'white/whiteShoe1.png',
+      category: categories[7]._id,
+      price: 34.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Elevate your footwear game with our white sneakers, a classic and essential choice that effortlessly complements a range of outfits. Crafted with attention to detail and comfort, these sneakers are designed to keep you stylish on the go.',
+      image: 'white/whiteShoe2.png',
+      category: categories[7]._id,
+      price: 45.99,
+      quantity: 500
+    },
+    {
+      name: 'Heels',
+      category: categories[7]._id,
+      description:
+        'Embrace elegance with our white heels, a sophisticated choice that adds a touch of glamour and versatility to any outfit. From formal events to nights out, these heels are designed to elevate your style while providing comfort and confidence with every step.',
+      image: 'white/whiteShoe3.png',
+      price: 37.99,
+      quantity: 20
+    },
+
+    //Black//
+    {
+      name: 'Sunglasses',
+      description:
+        'Elevate your eyewear game with our black sunglasses, a timeless accessory that adds an aura of sophistication to your look. Crafted with attention to both style and UV protection, these sunglasses are the perfect blend of fashion and functionality.',
+      image: 'black/blackAccs1.png',
+      category: categories[8]._id,
+      price: 18.99,
+      quantity: 500
+    },
+    {
+      name: 'Gloves',
+      description:
+        'Keep your hands cozy and stylish with our black gloves, a versatile accessory that adds a touch of elegance to your winter ensemble. Crafted for comfort and warmth, these gloves are designed to complete your cold-weather look with flair.',
+      image: 'black/blackAccs2.png',
+      category: categories[8]._id,
+      price: 15.99,
+      quantity: 500
+    },
+    {
+      name: 'Beanie',
+      category: categories[8]._id,
+      description:
+        'Stay warm and fashionable with our black beanie, a cozy accessory that adds an urban edge to your winter style. Crafted with attention to both comfort and design, this beanie is the perfect choice for braving the cold in style.',
+      image: 'black/blackAccs3.png',
+      price: 16.99,
+      quantity: 20
+    },
+    {
+      name: 'Hoodie',
+      category: categories[8]._id,
+      description:
+        'Stay comfortably stylish with our black zippered hoodie, a versatile essential that seamlessly blends warmth and fashion. Whether youre lounging at home or stepping out for a relaxed outing, this hoodie offers both comfort and a touch of urban flair.',
+      image: 'black/blackJacket1.png',
+      price: 25.99,
+      quantity: 30
+    },
+    {
+      name: 'Jacket',
+      category: categories[8]._id,
+      description:
+        'Elevate your outerwear game with our black bomber jacket, a classic and edgy choice that adds a touch of urban sophistication to your ensemble. Whether paired with jeans or a dress, this jacket is perfect for making a fashion statement while keeping you warm and stylish.',
+      image: 'black/blackJacket2.png',
+      price: 37.99,
+      quantity: 100
+    },
+    {
+      name: 'Jacket',
+      category: categories[8]._id,
+      description:
+        'Embrace a touch of elegance with our black collared jacket, a versatile piece that effortlessly transitions from formal to casual occasions. Crafted with attention to detail and a flattering silhouette, this jacket is perfect for adding a polished touch to your outfit.',
+      image: 'black/blackJacket3.png',
+      price: 29.99,
+      quantity: 80
+    },
+    {
+      name: 'Cargo Pants',
+      category: categories[8]._id,
+      description:
+        'Elevate your casual attire with our black cargo pants, a versatile and functional choice that adds an edge to your style. Designed for both comfort and practicality, these pants are perfect for expressing your individuality while staying on-trend.',
+      image: 'black/blackPants1.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Pants',
+      category: categories[8]._id,
+      description:
+        'Update your denim collection with our black jeans, a timeless and versatile staple that seamlessly complements a variety of looks. Crafted with attention to both fit and style, these jeans are a must-have addition for expressing your personality.',
+      image: 'black/blackPants2.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Sweatpants',
+      category: categories[8]._id,
+      description: 'Stay cozy and effortlessly stylish with our black sweatpants, a comfortable essential that seamlessly blends comfort and fashion. Crafted with a relaxed fit and attention to detail, these sweatpants are perfect for embracing a laid-back yet trendy look.',
+      image: 'black/blackPants3.png',
+      price: 29.99,
+      quantity: 30
+    },
+    {
+      name: 'Shirt',
+      category: categories[8]._id,
+      description:
+        'Add a touch of sophistication to your wardrobe with our black shirt, a versatile and classic choice that effortlessly complements various outfits. Crafted with attention to detail and a comfortable fit, this shirt is perfect for creating timeless ensembles.',
+      image: 'black/blackShirt1.png',
+      price: 19.99,
+      quantity: 1000
+    },
+    {
+      name: 'Long-Sleeve Shirt',
+      category: categories[8]._id,
+      description:
+        'Embrace cozy elegance with our black long-sleeve shirt, a wardrobe essential that seamlessly combines comfort and style. Whether worn alone or layered under jackets, this shirt is perfect for showcasing your fashion sense with a touch of refinement.',
+      image: 'black/blackShirt2.png',
+      price: 19.99,
+      quantity: 100
+    },
+    {
+      name: 'Blouse',
+      category: categories[8]._id,
+      description:
+        'Elevate your ensemble with our black blouse, a chic and versatile choice that adds a touch of effortless elegance to your look. Designed with attention to detail and a flattering silhouette, this blouse is perfect for enhancing your style whether paired with jeans or a skirt.',
+      image: 'black/blackShirt3.png',
+      price: 19.99,
+      quantity: 600
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Step up your footwear game with our black sneakers, a perfect blend of comfort and style for any occasion. Whether youre hitting the streets or looking to make a fashion statement, these sneakers offer a versatile and timeless choice to complete your look.',
+      image: 'black/blackShoe1.png',
+      category: categories[8]._id,
+      price: 38.99,
+      quantity: 500
+    },
+    {
+      name: 'Sneakers',
+      description:
+        'Elevate your casual look with our black sneakers, a classic and essential choice that effortlessly complements a variety of outfits. Crafted with attention to detail and comfort, these sneakers are designed to keep you stylish on the go.',
+      image: 'black/blackShoe2.png',
+      category: categories[8]._id,
+      price: 32.99,
+      quantity: 500
+    },
+    {
+      name: 'Shoes',
+      category: categories[8]._id,
+      description:
+        'Add a versatile staple to your shoe collection with our black shoes, a must-have choice that seamlessly transitions from casual to formal occasions. Crafted for both comfort and style, these shoes are designed to elevate your ensemble while providing all-day comfort.',
+      image: 'black/blackShoe3.png',
+      price: 37.99,
+      quantity: 20
     },
   ]);
 
