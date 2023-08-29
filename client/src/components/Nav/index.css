@@ -24,7 +24,7 @@
     font-size: 40px;
 }
 
-.submit-btn{
+.submit-btn {
     grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
     border-radius: 5px;
@@ -35,3 +35,9 @@
     font-size: 18px;
     margin-top: 20px
 }
+
+.product-list {
+    display: grid;
+    background-color: red;
+}
+

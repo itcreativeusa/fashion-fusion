@@ -7,6 +7,7 @@ import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
+
 function ProductList() {
   const [state, dispatch] = useStoreContext();
 
@@ -44,7 +45,7 @@ function ProductList() {
   }
 
   return (
-    <div className="my-2">
+    <div className="product-list">
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="flex-row">
