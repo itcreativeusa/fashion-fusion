@@ -50,7 +50,7 @@ function Nav(props) {
       </nav>
 
   <h1 className="flex-row px-1 Title">
-        <Link to="/">
+        <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
             👗
           </span>
