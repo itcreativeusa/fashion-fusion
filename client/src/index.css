@@ -49,6 +49,31 @@ button:hover {
     opacity: .8;
 }
 
+@keyframes pulse {
+    0% {
+        color: var(--primary);
+    }
+    20% {
+        color: var(--secondary);
+    }
+    40% {
+        color: var(--tertiary);
+    }
+    60% {
+        color: var(--quinary);
+    }
+    80% {
+        color: var(--senary);
+    }
+    100% {
+        color: var(--error);
+    }
+}
+
+a.pulse {
+    animation: pulse 6s infinite;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
