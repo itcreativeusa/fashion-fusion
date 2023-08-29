@@ -131,7 +131,7 @@ db.once("open", async () => {
       description:
 
         'A versatile piece that seamlessly transitions from casual to smart. Crafted with attention to detail and a modern fit, this shirt offers both style and comfort for any occasion.',
-      image: 'red/redShirt1.png',
+      image: 'red/redShirt1.jpg',
 
       price: 25.99,
       quantity: 100,

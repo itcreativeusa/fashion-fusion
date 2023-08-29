@@ -37,6 +37,7 @@ function Nav(props) {
   }
 
   return (
+
     <header className={props.darkMode ? "dark header" : "header"}>
       <nav className={props.darkMode ? "dark": ""}>
         {showNavigation()}
@@ -49,7 +50,6 @@ function Nav(props) {
         </div>
       </nav>
 
-      <h1 className="title">
         <Link to="/">
           <span role="img" aria-label="dress">
             👗
