@@ -1,19 +1,12 @@
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.productItem {
-    width: 25%;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Karla:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto" sans-serif
+    font-family: Roboto sans-serif;
+    background-color: lightgray;
 }
 
 footer {
@@ -23,16 +16,19 @@ footer {
   box-shadow: 7.5px -3px 0px rgba(0, 0, 0, 0.1);
   justify-content: center;
   margin-top: 30px;
+  font-family: roboto sans-serif;
+  font-size: 20px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    background-color: hsl(0, 0%, 35%);
-    height: 300px;
+    justify-content: center;
+    padding-top: 10px;
+    height: 80vh;
     margin-top: 40px;
+    font-family: roboto sans-serif;
 }
 
 .navbar {
@@ -42,6 +38,42 @@ footer {
     padding: 20px 36px;
     background: linear-gradient(90deg, #672280 0%, #a626d3 100%);
     margin: -15px;
-    font-family: "Roboto" sans-serif;
+    font-family: Roboto sans-serif;
 }
 
+.signupbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: transparent;
+    
+}
+
+.user-form {
+    display: flex;
+    border-radius: 15px 15px 20% 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    height: 50vh;
+    width: 50vw;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+form > input {
+    font-size: 20px;
+    border-radius: 5px;
+
+}
