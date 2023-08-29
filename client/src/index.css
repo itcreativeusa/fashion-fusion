@@ -7,3 +7,39 @@
     width: 25%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto" sans-serif
+}
+
+footer {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: 7.5px -3px 0px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: hsl(0, 0%, 35%);
+    height: 300px;
+    margin-top: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px;
+    background: linear-gradient(90deg, #672280 0%, #a626d3 100%);
+    margin: -15px;
+    font-family: "Roboto" sans-serif;
+}
