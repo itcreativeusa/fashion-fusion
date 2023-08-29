@@ -3,7 +3,7 @@ import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-function Nav() {
+function Nav(props) {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -37,8 +37,17 @@ function Nav() {
   }
 
   return (
-    <header className="header">
-      <nav>{showNavigation()}</nav>
+    <header className={props.darkMode ? "dark header" : "header"}>
+      <nav className={props.darkMode ? "dark": ""}>
+        {showNavigation()}
+        <div className="toggler">
+          <p className="toggler--light">Light</p>
+          <div className="toggler--slider" onClick={props.toggleDarkMode}>
+            <div className="toggler--slider--circle"></div>
+          </div>
+          <p className="toggler--dark">Dark</p>
+        </div>
+      </nav>
 
       <h1 className="title">
         <Link to="/">
@@ -49,7 +58,6 @@ function Nav() {
         </Link>
       </h1>
     </header>
-      
   );
 }
 
