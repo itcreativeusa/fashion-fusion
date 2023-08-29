@@ -23,3 +23,15 @@
     display: inline-block;
     font-size: 40px;
 }
+
+.submit-btn{
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #711f8d 0%, #a818da 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px
+}
