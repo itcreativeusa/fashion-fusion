@@ -72,7 +72,7 @@ db.once("open", async () => {
       quantity: 50,
     },
     {
-      name: "Cropped Red Denim Jacket",
+      name: "Cropped Denim Jacket",
       category: categories[0]._id,
       description:
 
@@ -129,7 +129,6 @@ db.once("open", async () => {
       name: "Button-Up",
       category: categories[0]._id,
       description:
-
         'A versatile piece that seamlessly transitions from casual to smart. Crafted with attention to detail and a modern fit, this shirt offers both style and comfort for any occasion.',
       image: 'red/redShirt1.jpg',
 

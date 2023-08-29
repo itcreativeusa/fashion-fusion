@@ -1,7 +1,6 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import "./index.css";
 
 function Nav() {
   function showNavigation() {
@@ -21,12 +20,12 @@ function Nav() {
     } else {
       return (
         <header>
-          <nav>
-            <ul className="navbar">
-              <li className="li">
+          <nav className = "navbar">
+            <ul>
+              <li>
                 <Link to="/signup">Signup</Link>
               </li>
-              <li className="li">
+              <li>
                 <Link to="/login">Login</Link>
               </li>
             </ul>
@@ -37,8 +36,7 @@ function Nav() {
   }
 
   return (
-    <header className="flex-row px-1 navbar">
-
+    <header className="flex-row px-1">
       <h1 className="Title">
 
         <Link to="/">
@@ -48,8 +46,9 @@ function Nav() {
           Fashion Fusion
         </Link>
       </h1>
+      <nav>{showNavigation()}</nav>
     </header>
-      
+
   );
 }
 
