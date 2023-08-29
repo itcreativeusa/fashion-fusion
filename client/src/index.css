@@ -55,6 +55,38 @@ button:hover {
     font-family: "Karla", sans-serif;
     background-color: var(--quinary);
     padding: 10px;
+
+@keyframes pulse {
+    0% {
+        color: var(--primary);
+    }
+    20% {
+        color: var(--secondary);
+    }
+    40% {
+        color: var(--tertiary);
+    }
+    60% {
+        color: var(--quinary);
+    }
+    80% {
+        color: var(--senary);
+    }
+    100% {
+        color: var(--error);
+    }
+}
+
+a.pulse {
+    animation: pulse 6s infinite;
+}
+
+.productItem {
+    display: inline-block;
+    margin: 10px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--quinary);
+    padding: 10px;
     align-items: center;
     justify-content: center;
 }
