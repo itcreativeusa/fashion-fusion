@@ -31,56 +31,53 @@ function Signup(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/login">← Go to Login</Link>
-      <div className="signupbox">
-        <h2>Signup</h2>
-        <form onSubmit={handleFormSubmit} className="user-form">
-          <div className="flex-row space-between my-2 input-box">
-            <label htmlFor="firstName">First Name:</label>
-            <input
-              placeholder="First"
-              name="firstName"
-              type="firstName"
-              id="firstName"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex-row space-between my-2 input-box">
-            <label htmlFor="lastName">Last Name:</label>
-            <input
-              placeholder="Last"
-              name="lastName"
-              type="lastName"
-              id="lastName"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex-row space-between my-2 input-box">
-            <label htmlFor="email">Email:</label>
-            <input
-              placeholder="youremail@test.com"
-              name="email"
-              type="email"
-              id="email"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex-row space-between my-2 input-box">
-            <label htmlFor="pwd">Password:</label>
-            <input
-              placeholder="******"
-              name="password"
-              type="password"
-              id="pwd"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex-row flex-end">
-            <button type="submit" className="submit-btn">Submit</button>
-          </div>
-        </form>
-      </div>
+    <div className="signupbox">
+      <h2 className="formTitle">Sign Up</h2>
+      <form onSubmit={handleFormSubmit} className="user-form2">
+        <div className="input-box">
+          <label htmlFor="firstName">First Name:</label>
+          <input
+            placeholder="First"
+            name="firstName"
+            type="firstName"
+            id="firstName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-box">
+          <label htmlFor="lastName">Last Name:</label>
+          <input
+            placeholder="Last"
+            name="lastName"
+            type="lastName"
+            id="lastName"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-box">
+          <label htmlFor="email">Email:</label>
+          <input
+            placeholder="youremail@test.com"
+            name="email"
+            type="email"
+            id="email"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="input-box">
+          <label htmlFor="pwd">Password:</label>
+          <input
+            placeholder="*********"
+            name="password"
+            type="password"
+            id="pwd"
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <button type="submit" className="submit-btn">Submit</button>
+        </div>
+      </form>
     </div>
   );
 }

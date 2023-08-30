@@ -8,11 +8,13 @@ function Nav(props) {
       return (
         <ul className="navbar">
           <li className="li">
-            <Link to="/orderHistory">Order History</Link>
+            <Link to="/orderHistory">
+              <button className="button">View Orders</button>
+              </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
-              Logout
+              <button className="button">Logout</button>
             </a>
           </li>
         </ul>
@@ -20,13 +22,17 @@ function Nav(props) {
     } else {
       return (
         <header>
-          <nav className = "navbar">
+          <nav className="navbar">
             <ul>
               <li>
-                <Link to="/signup">Signup</Link>
+                <Link to="/signup">
+                  <button className="button">SIGN UP</button>
+                </Link>
               </li>
               <li>
-                <Link to="/login">Login</Link>
+                <Link to="/login">
+                  <button className="button">LOG IN</button>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -36,9 +42,8 @@ function Nav(props) {
   }
 
   return (
-
     <header className={props.darkMode ? "dark header" : "header"}>
-      <nav className={props.darkMode ? "dark": ""}>
+      <nav className={props.darkMode ? "dark" : ""}>
         {showNavigation()}
         <div className="toggler">
           <p className="toggler--light">Light</p>
@@ -57,8 +62,7 @@ function Nav(props) {
           Fashion Fusion
         </Link>
       </h1>
-      <nav>{showNavigation()}</nav>
-  </header>
+    </header>
   );
 }
 

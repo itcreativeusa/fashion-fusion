@@ -35,7 +35,7 @@ footer {
   font-size: 20px;
 }
 
-button {
+.cartBtns {
     padding: 0.25rem 1rem;
     border-radius: .2rem;
     border: solid;
@@ -48,6 +48,13 @@ button {
 button:hover {
     opacity: .8;
 }
+
+.productItem {
+    display: inline-block;
+    margin: 10px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--quinary);
+    padding: 10px;
 
 @keyframes pulse {
     0% {
@@ -74,26 +81,45 @@ a.pulse {
     animation: pulse 6s infinite;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+.productItem {
+    display: inline-block;
+    margin: 10px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--quinary);
+    padding: 10px;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
-    height: 80vh;
-    margin-top: 40px;
-    font-family: "Karla", sans-serif;
+}
+
+.productImg {
+    width: 180px;
+    height: 200px;
+
 }
 
 .navbar {
+    padding-right: 75px;
+    float: right;
+}
+
+.button {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 36px;
-    background-color: var(--secondary);
-    /*background: linear-gradient(90deg, #672280 0%, #a626d3 100%);*/
-    margin: -15px;
+    background-color: var(--senary);
     font-family: "Karla", sans-serif;
+    padding-top: 5px;
+    padding-right: 65px;
+    float: right;
+    font-size: 25px;
+    list-style-type: none;
+    flex: wrap;
+    justify-content: center;
+    border: 1px solid var(--quinary);
+    border-radius: 35px;
+    margin: 15px;
+    font-size: 23px;
+    padding: 10px;
+    width: 150px;
+    color: white
 }
 
 .header.dark {
@@ -102,6 +128,7 @@ a.pulse {
 
 .signupbox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -109,34 +136,51 @@ a.pulse {
     
 }
 
-.user-form {
-    display: flex;
-    border-radius: 15px 15px 20% 15px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    padding: 20px;
-    height: 50vh;
-    width: 50vw;
+.formTitle {
+    font-size: 45px;
     font-family: "Karla", sans-serif;
-
+    flex-direction: column;
 }
 
+.user-form {
+    display: flex;
+    border-radius: 20%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary);
+    padding: 20px;
+    height: 45vh;
+    width: 30vw;
+}
+
+.user-form2{
+    display: flex;
+    background-color: var(--tertiary);
+    border-radius: 20%;
+    padding: 20px;
+    height: 75vh;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 10px;
+}
 .input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
     font-size: 30px;
     font-family: "Karla", sans-serif;
+    padding: 25px;
 }
 
-form > input {
-    font-size: 20px;
+input {
+    font-size: 25px;
     border-radius: 5px;
-
 }
 
 .toggler {
@@ -199,33 +243,11 @@ nav.dark .toggler--slider {
     justify-content: flex-end;
 }
 
-.flex-row {
+.product-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.space-between {
-    justify-content: space-between;
-}
-  
-.flex-end {
-    justify-content: flex-end;
-}
-
-.productItem {
-    width: 25%
-}
-
-.navbar {
-    padding-top: 5px;
-    padding-right: 65px;
-    margin-right: 20px;
-    float: right;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 20px;
-    list-style-type: none;
-    flex: wrap;
-}
 
 .navbar li {
     display: inline-block;
@@ -243,8 +265,7 @@ nav.dark .toggler--slider {
     font-size: 40px;
 }
 
-.submit-btn{
-    grid-column: 1 / -1;
+.submit-btn {
     font-family: "Karla", sans-serif;
     border-radius: 5px;
     background: linear-gradient(135deg, #711f8d 0%, #a818da 100%);
@@ -252,13 +273,17 @@ nav.dark .toggler--slider {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    margin-top: 20px
+    margin-top: 20px;
+    justify-content: flex-end;
 }
 
 .categoryBtn{
     background: var(--tertiary);
     border: 1px solid var(--quinary);
     border-radius: 35px;
-    width: 200px;
+    margin: 15px;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
     color: white
 }
