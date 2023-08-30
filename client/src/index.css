@@ -43,18 +43,11 @@ footer {
     cursor: pointer;
     margin: 0 1px;
     background-color: var(--tertiary);
-  }
+}
 
 button:hover {
     opacity: .8;
 }
-
-.productItem {
-    display: inline-block;
-    margin: 10px;
-    font-family: "Karla", sans-serif;
-    background-color: var(--quinary);
-    padding: 10px;
 
 @keyframes pulse {
     0% {
@@ -277,7 +270,7 @@ nav.dark .toggler--slider {
     justify-content: flex-end;
 }
 
-.categoryBtn{
+.categoryBtn {
     background: var(--tertiary);
     border: 1px solid var(--quinary);
     border-radius: 35px;
@@ -285,5 +278,5 @@ nav.dark .toggler--slider {
     font-size: 20px;
     padding: 10px;
     width: 150px;
-    color: white
+    color: white;
 }
