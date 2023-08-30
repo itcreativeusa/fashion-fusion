@@ -49,13 +49,6 @@ button:hover {
     opacity: .8;
 }
 
-.productItem {
-    display: inline-block;
-    margin: 10px;
-    font-family: "Karla", sans-serif;
-    background-color: var(--quinary);
-    padding: 10px;
-
 @keyframes pulse {
     0% {
         color: var(--primary);
