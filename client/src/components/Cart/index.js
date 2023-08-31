@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { CardElement, useStripe, useElements, Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery } from "@apollo/client";
 import { QUERY_CHECKOUT } from "../../utils/queries";
@@ -9,11 +10,66 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+const stripePromise = loadStripe(
+  "pk_live_51NkzyQAMkYNBOVbpfOmMKDhaoJHuvfJyQVrvIVyZMKmvqYiFfCQZ3EmPBNMtjLUUdLxSPTecspwRIrIdmx3jltqM00PiiLrXRf"
+);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
+  //checkout form
+  const CheckoutForm = () => {
+    const stripe = useStripe();
+    const elements = useElements();
+
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+      const {error, paymentMethod} = await stripe.createPaymentMethod({
+        type: 'card',
+        card: elements.getElement(CardElement),
+      });
+
+      if (error) {
+        console.log("Stripe error:", error);
+      } else {
+        processPayment(paymentMethod);
+      }
+
+      console.log('button clicked')
+    }
+
+    async function processPayment(paymentMethod) {
+      const response = await fetch("/api/charge", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          paymentMethodId: paymentMethod.id,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error("Payment failed:", data);
+        return;
+      }
+
+      console.log("Payment successful:", data);
+    }
+
+    return (
+      <form onSubmit={handleSubmit}>
+        <CardElement />
+          <button type="submit" disabled={!stripe}>
+            Pay
+          </button>
+      </form>
+    );
+  }
+
 
   useEffect(() => {
     if (data) {
@@ -71,36 +127,43 @@ const Cart = () => {
   }
 
   return (
-    <div className="cart">
-      <div className="close" onClick={toggleCart}>
-        [close]
-      </div>
-      <h2>Shopping Cart</h2>
-      {state.cart.length ? (
-        <div>
-          {state.cart.map((item) => (
-            <CartItem key={item._id} item={item} />
-          ))}
-
-          <div>
-            <strong>Total: ${calculateTotal()} </strong>
-
-            {Auth.loggedIn() ? (
-              <button className="cartBtns" onClick={submitCheckout}>Checkout</button>
-            ) : (
-              <span> (log in/sign up to check out)</span>
-            )}
-          </div>
+    <Elements stripe={stripePromise}>
+      <div className="cart">
+        <div className="close" onClick={toggleCart}>
+          [close]
         </div>
-      ) : (
-        <h3>
-          <span role="img" aria-label="shocked">
-            😱
-          </span>
-          You haven't added anything to your cart yet!
-        </h3>
-      )}
-    </div>
+        <h2>Shopping Cart</h2>
+        {state.cart.length ? (
+          <div>
+            {state.cart.map((item) => (
+              <CartItem key={item._id} item={item} />
+            ))}
+
+            <div>
+              <strong>Total: ${calculateTotal()} </strong>
+
+              {Auth.loggedIn() ? (
+                <div>
+                  <button className="cartBtns" onClick={submitCheckout}>
+                    Checkout
+                  </button>
+                  <CheckoutForm />
+                </div>
+              ) : (
+                <span> (log in/sign up to check out)</span>
+              )}
+            </div>
+          </div>
+        ) : (
+          <h3>
+            <span role="img" aria-label="shocked">
+              😱
+            </span>
+            You haven't added anything to your cart yet!
+          </h3>
+        )}
+      </div>
+    </Elements>
   );
 };
 

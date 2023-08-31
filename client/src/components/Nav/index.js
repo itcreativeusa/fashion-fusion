@@ -66,13 +66,12 @@ function Nav(props) {
         </div>
       </nav>
 
-
       <button button type="button" onClick="window.location.reload()" className="Title">
         <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
             👗
           </span>
-          Fashion Fusion
+          FASHION FUSION
         </Link>
       </button>
     </header>
