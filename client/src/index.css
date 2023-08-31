@@ -285,8 +285,11 @@ body.dark {
   justify-content: space-between;
 }
 
-.title {
+.Title {
     font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
     font-size: 40px;
     letter-spacing: .10px;
     font-weight: 300;
