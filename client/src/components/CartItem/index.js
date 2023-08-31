@@ -54,7 +54,7 @@ const CartItem = ({ item }) => {
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            🗑️
+            <img className="trash-icon" src="/trash.ico" alt="trash" /> 
           </span>
         </div>
       </div>
