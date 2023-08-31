@@ -65,14 +65,7 @@ const Cart = () => {
       console.log("Payment successful:", data);
     }
 
-    return (
-      <form onSubmit={handleSubmit}>
-        <CardElement />
-        <button type="submit" disabled={!stripe}>
-          Pay
-        </button>
-      </form>
-    );
+    return <form onSubmit={handleSubmit}>Thank you for shoping with us!</form>;
   };
 
   useEffect(() => {
@@ -124,7 +117,7 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-                    <img className="cartLogo" src="/cart.ico" alt="cart image" />
+          <img className="cartLogo" src="/cart.ico" alt="cart image" />
         </span>
       </div>
     );
