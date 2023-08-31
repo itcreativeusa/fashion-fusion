@@ -34,6 +34,7 @@ Fashion-Fusione is an eCommerce platform specializing in clothing, where garment
 - Express.js
 - MongoDB
 - Mongoose ODM
+- Stripe API
 
 **Functionality:**
 
@@ -43,6 +44,7 @@ Fashion-Fusione is an eCommerce platform specializing in clothing, where garment
 **Deployment and Hosting:**
 
 - Heroku
+- MongoDB Atlas
 
 **Security:**
 
@@ -94,8 +96,8 @@ Your sensitive API key information is protected on the server, ensuring the secu
 
 ## Screenshots
 
-Screenshot located in `./img/` folder
-![TODO add text here](./img/screenshot.png)
+Screenshot located in `img/` folder
+![categories](img/Screenshot.png)
 
 ## Credits
 
