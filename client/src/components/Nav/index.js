@@ -1,16 +1,28 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import { useQuery } from "@apollo/client";
+import { QUERY_USER } from "../../utils/queries";
 
 function Nav(props) {
+  const { data: userData } = useQuery(QUERY_USER);
+  const user = userData?.user;
+
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
         <ul className="navbar">
           <li className="li">
+            {user && (
+              <h2 id="welcomeMessage">
+                Welcome, {user.firstName} {user.lastName}
+              </h2>
+            )}
+          </li>
+          <li className="li">
             <Link to="/orderHistory">
               <button className="button">View Orders</button>
-              </Link>
+            </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
@@ -54,14 +66,14 @@ function Nav(props) {
         </div>
       </nav>
 
-  <h1 className="flex-row px-1 title">
+      <button button type="button" onClick="window.location.reload()" className="Title">
         <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
             👗
           </span>
           FASHION FUSION
         </Link>
-      </h1>
+      </button>
     </header>
   );
 }
