@@ -1,5 +1,10 @@
 import React, { useEffect } from "react";
-import { CardElement, useStripe, useElements, Elements } from "@stripe/react-stripe-js";
+import {
+  CardElement,
+  useStripe,
+  useElements,
+  Elements,
+} from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { useLazyQuery } from "@apollo/client";
 import { QUERY_CHECKOUT } from "../../utils/queries";
@@ -10,7 +15,9 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+const stripePromise = loadStripe(
+  "pk_live_51NkzyQAMkYNBOVbpfOmMKDhaoJHuvfJyQVrvIVyZMKmvqYiFfCQZ3EmPBNMtjLUUdLxSPTecspwRIrIdmx3jltqM00PiiLrXRf"
+);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
@@ -23,8 +30,8 @@ const Cart = () => {
 
     const handleSubmit = async (event) => {
       event.preventDefault();
-      const {error, paymentMethod} = await stripe.createPaymentMethod({
-        type: 'card',
+      const { error, paymentMethod } = await stripe.createPaymentMethod({
+        type: "card",
         card: elements.getElement(CardElement),
       });
 
@@ -34,8 +41,8 @@ const Cart = () => {
         processPayment(paymentMethod);
       }
 
-      console.log('button clicked')
-    }
+      console.log("button clicked");
+    };
 
     async function processPayment(paymentMethod) {
       const response = await fetch("/api/charge", {
@@ -61,13 +68,12 @@ const Cart = () => {
     return (
       <form onSubmit={handleSubmit}>
         <CardElement />
-          <button type="submit" disabled={!stripe}>
-            Pay
-          </button>
+        <button type="submit" disabled={!stripe}>
+          Pay
+        </button>
       </form>
     );
-  }
-
+  };
 
   useEffect(() => {
     if (data) {
