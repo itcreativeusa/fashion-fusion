@@ -7,10 +7,19 @@ function Nav(props) {
     if (Auth.loggedIn()) {
       return (
         <ul className="navbar">
+          <li>
+            <div className="toggler">
+              <p className="toggler--light">Light</p>
+              <div className="toggler--slider" onClick={props.toggleDarkMode}>
+                <div className="toggler--slider--circle"></div>
+              </div>
+              <p className="toggler--dark">Dark</p>
+            </div>
+          </li>
           <li className="li">
             <Link to="/orderHistory">
               <button className="button">View Orders</button>
-              </Link>
+            </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
