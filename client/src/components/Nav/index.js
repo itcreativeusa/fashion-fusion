@@ -44,17 +44,17 @@ function Nav(props) {
       return (
         <header>
           <nav className="navbar">
-            <ul>
+            <ul className="all-buttons">
               <li>
                 <div className="toggler">
-                  <p className="toggler--light">Light</p>
+                  <p className="toggler--light toggler-label">Light</p>
                   <div
                     className="toggler--slider"
                     onClick={props.toggleDarkMode}
                   >
                     <div className="toggler--slider--circle"></div>
                   </div>
-                  <p className="toggler--dark">Dark</p>
+                  <p className="toggler--dark toggler-label">Dark</p>
                 </div>
               </li>
               <li>
@@ -76,18 +76,18 @@ function Nav(props) {
 
   return (
     <header className={props.darkMode ? "dark header" : "header"}>
-      <nav className={props.darkMode ? "dark" : ""}>
-        {showNavigation()}
-      </nav>
-
-      <button button type="button" onClick="window.location.reload()" className="Title">
+      <h1 button type="button" onClick="window.location.reload()" className="Title">
         <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
           
           </span>
           FASHION FUSION
         </Link>
-      </button>
+      </h1>
+      <nav className={props.darkMode ? "dark" : ""}>
+        {showNavigation()}
+      </nav>
+
     </header>
   );
 }

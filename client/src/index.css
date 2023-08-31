@@ -108,6 +108,12 @@ a.pulse {
   float: right;
 }
 
+.all-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   display: flex;
   background-color: var(--senary);
@@ -190,18 +196,17 @@ input {
 
 .toggler {
   display: flex;
-  align-items: center;
-    height: 30px;
+  height: 15p;
 }
 
-.toggler p {
+.toggler-label {
   font-size: 0.625rem;
   font-weight: 600;
 }
 
 .toggler--slider {
-  width: 25px;
-  height: 13px;
+  width: 50px;
+  height: 30px;
   background-color: #2b283a;
   border-radius: 2rem;
   margin-inline: 7px;
@@ -219,8 +224,8 @@ nav.dark .toggler--slider {
 }
 
 .toggler--slider--circle {
-  height: 13px;
-  width: 13px;
+  height: 25px;
+  width: 25px;
   background-color: white;
   border-radius: 50%;
 }
@@ -276,11 +281,12 @@ body.dark {
 
 .header {
   background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
     font-family: 'Roboto', sans-serif;
-    display: inline-block;
     font-size: 40px;
     letter-spacing: .10px;
     font-weight: 300;
@@ -290,7 +296,7 @@ body.dark {
 .submit-btn {
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
-  background: linear-gradient(135deg, #711f8d 0%, #a818da 100%);
+  background: linear-gradient(135deg, #f17a7e 0%, rgb(228, 46, 1) 100%);
   color: white;
   border: none;
   cursor: pointer;
@@ -311,12 +317,13 @@ body.dark {
 }
 
 #welcomeMessage {
-  font-family: "Karla", sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 26px;
   color: white;
   margin: 20px;
   float: right;
 }
+
 .category {
     font-family: 'roboto', sans-serif;
 }
