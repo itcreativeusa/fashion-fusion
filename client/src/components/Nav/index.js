@@ -10,7 +10,7 @@ function Nav(props) {
           <li className="li">
             <Link to="/orderHistory">
               <button className="button">View Orders</button>
-              </Link>
+            </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
@@ -54,14 +54,14 @@ function Nav(props) {
         </div>
       </nav>
 
-  <h1 className="flex-row px-1 Title">
+      <button button type="button" onClick="window.location.reload()" className="Title">
         <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
             👗
           </span>
           Fashion Fusion
         </Link>
-      </h1>
+      </button>
     </header>
   );
 }

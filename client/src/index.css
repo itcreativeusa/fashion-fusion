@@ -251,11 +251,13 @@ nav.dark .toggler--slider {
     background-color: lightgoldenrodyellow;
 }
 
-.title {
+.Title {
     padding-top: 5px;
-    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-family: "Karla", sans-serif;
     display: inline-block;
     font-size: 40px;
+    border: none;
+    background-color: transparent;
 }
 
 .submit-btn {
