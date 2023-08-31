@@ -40,7 +40,7 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  const [darkMode, setDarkMode] = React.useState(false);
     
   React.useEffect(() => {
       if (darkMode) {

@@ -25,6 +25,18 @@ function Nav(props) {
           <nav className="navbar">
             <ul>
               <li>
+                <div className="toggler">
+                  <p className="toggler--light">Light</p>
+                  <div
+                    className="toggler--slider"
+                    onClick={props.toggleDarkMode}
+                  >
+                    <div className="toggler--slider--circle"></div>
+                  </div>
+                  <p className="toggler--dark">Dark</p>
+                </div>
+              </li>
+              <li>
                 <Link to="/signup">
                   <button className="button">SIGN UP</button>
                 </Link>
@@ -45,19 +57,12 @@ function Nav(props) {
     <header className={props.darkMode ? "dark header" : "header"}>
       <nav className={props.darkMode ? "dark" : ""}>
         {showNavigation()}
-        <div className="toggler">
-          <p className="toggler--light">Light</p>
-          <div className="toggler--slider" onClick={props.toggleDarkMode}>
-            <div className="toggler--slider--circle"></div>
-          </div>
-          <p className="toggler--dark">Dark</p>
-        </div>
       </nav>
 
-  <h1 className="flex-row px-1 title">
+      <h1 className="flex-row px-1 title">
         <Link className="pulse" to="/">
           <span role="img" aria-label="dress">
-            👗
+          
           </span>
           FASHION FUSION
         </Link>
