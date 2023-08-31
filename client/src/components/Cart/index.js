@@ -65,7 +65,7 @@ const Cart = () => {
       console.log("Payment successful:", data);
     }
 
-    return <form onSubmit={handleSubmit}>Thank you for shoping with us!</form>;
+    return <form onSubmit={handleSubmit}>Thank you for shopping with us!</form>;
   };
 
   useEffect(() => {
