@@ -8,6 +8,7 @@ const Home = () => {
   return (
     
     <div>
+      <img id="mainPhoto" src="./images/fasion-fusion.png" alt="fashion-fusion"></img>
       <CategoryMenu />
       <ProductList />
       <Cart />
