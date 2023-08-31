@@ -21,13 +21,13 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-    font-family: 'Roboto' sans-serif;
-    background-color: var(--primary);
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 16px;
+  font-family: "Roboto" sans-serif;
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 footer {
@@ -78,12 +78,12 @@ button:hover {
 }
 
 a.pulse {
-    animation: pulse 6s infinite;
-    margin-left: 20px;
+  animation: pulse 6s infinite;
+  margin-left: 20px;
 }
 
 .product-list {
-    font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 .productItem {
   display: inline-block;
@@ -93,9 +93,8 @@ a.pulse {
   padding: 10px;
   align-items: center;
   justify-content: center;
-    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.1), 
-                6px 6px 10px 10px rgba(0, 0, 0, 0.15);
-
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.1),
+    6px 6px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .productImg {
@@ -148,9 +147,9 @@ a.pulse {
 }
 
 .formTitle {
-    font-size: 45px;
-    font-family: "Roboto", sans-serif;
-    flex-direction: column;
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
 }
 
 .user-form {
@@ -255,19 +254,18 @@ nav.dark .toggler--slider {
 }
 
 body.dark {
-    background-color: #080C27;
-    color: #CCCCCC;
+  background-color: #080c27;
+  color: #cccccc;
 }
 
 .header.dark {
-    background: linear-gradient(90deg, #252457 0%, #282729 100%);
-    box-shadow: 0px 5px 10px 0px rgba(0,255,255,0.7);
+  background: linear-gradient(90deg, #252457 0%, #282729 100%);
+  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
 }
 
 .footer.dark {
-    background: linear-gradient(90deg, #252457 0%, #282729 100%);
+  background: linear-gradient(90deg, #252457 0%, #282729 100%);
 }
-
 
 .product-row {
   display: flex;
@@ -286,14 +284,14 @@ body.dark {
 }
 
 .Title {
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    font-size: 40px;
-    letter-spacing: .10px;
-    font-weight: 300;
-    word-spacing: -5px;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  letter-spacing: 0.1px;
+  font-weight: 300;
+  word-spacing: -5px;
 }
 
 .submit-btn {
@@ -322,11 +320,11 @@ body.dark {
 #welcomeMessage {
   font-family: "roboto", sans-serif;
   font-size: 26px;
-  color: white;
+  color: orange;
   margin: 20px;
   float: right;
 }
 
 .category {
-    font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
